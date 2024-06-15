@@ -1,8 +1,8 @@
-# Stock Market Forecasting using Network Analysis and LSTM Networks
+# Stock Market Forecasting using Network Analysis and LSTM Network
 
 ## Key Idea of the Project
 
-The goal of this project is to develop an accurate predictive model for stock prices using a combination of network analysis and Long Short-Term Memory (LSTM) networks.
+The goal of this project is to develop an accurate predictive model for stock prices using a combination of network analysis and Long Short-Term Memory (LSTM) network.
 
 Accurately predicting stock prices is crucial for investors and traders to make informed decisions and manage risks effectively. Traditional methods often rely on technical analysis and historical data. However, by leveraging the power of neural networks and network analysis, we aim to create a more robust and accurate predictive model.
 
@@ -30,4 +30,4 @@ Historical stock price data will be collected from reputable financial data sour
 
 - **Model Evaluation**: Evaluate the performance of the LSTM network using metrics such as Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), and R-squared (R²) to ensure the accuracy and reliability of the predictions.
 
-By integrating network analysis with LSTM networks and implementing robust evaluation methods, we aim to create a comprehensive and accurate predictive model for stock market forecasting.
+By integrating network analysis with LSTM network and implementing robust evaluation methods, we aim to create a comprehensive and accurate predictive model for stock market forecasting.
