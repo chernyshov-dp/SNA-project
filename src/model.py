@@ -81,18 +81,18 @@ def calculate_metrics(model, data_loader, device):
     mape_std = np.std(np.abs((predictions - targets) / targets))
     r2_std = np.std(r2_score(targets, predictions))
 
-    print(f"{'MAE:':<6} {mae:.4f} ± {mae_std:.2f}")
-    print(f"{'MAPE:':<6} {mape:.4f} ± {mape_std:.2f}")
-    print(f"{'R²:':<6} {r2:.4f} ± {r2_std:.2f}")
+    print(f"{'MAE:':<6} {mae:.2f} ± {mae_std:.2f}")
+    print(f"{'MAPE:':<6} {mape:.2f} ± {mape_std:.2f}")
+    print(f"{'R²:':<6} {r2:.2f} ± {r2_std:.2f}")
 
-    return mae, r2
+    return mae, mape, r2
 
 
 def plot_actual_predicted(targets, predictions, save=False, filename="prediction.png"):
     if save:
         plt.figure(figsize=(12, 6))
         plt.plot(targets, label="Ground truth", color="black")
-        plt.plot(predictions, label="Predicted", color="blue")
+        plt.plot(predictions, label="Prediction", color="blue")
         
         std_dev = np.std(predictions)
         upper_bound = predictions + std_dev
